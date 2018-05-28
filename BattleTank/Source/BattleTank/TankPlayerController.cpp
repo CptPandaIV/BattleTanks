@@ -3,13 +3,15 @@
 #include "TankPlayerController.h"
 #include "BattleTank.h"
 
+class ATank;
+
 void ATankPlayerController::BeginPlay()
 {
 	Super::BeginPlay();
 	auto ControlledTank = GetControlledTank();
 	if (!ControlledTank)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("PlayerController not possessing tank."))
+		UE_LOG(LogTemp, Warning, TEXT("PlayerController not possessing tank."));
 	}
 	else
 	{
