@@ -32,6 +32,10 @@ public:
 		float LaunchSpeed = 100000; // TODO find sensible default
 
 	void AimAt(FVector HitLocation);
+
 	UFUNCTION(BlueprintCallable, Category = Setup)
 	void SetBarrelReference(UTankBarrel* BarrelToSet);
+
+	UFUNCTION(BlueprintCallable, Category = Setup)
+		void SetTurretReference(UTankTurret* TurretToSet);
 };

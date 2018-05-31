@@ -6,6 +6,8 @@
 #include "GameFramework/PlayerController.h"
 #include "TankPlayerController.generated.h" //must be LAST
 
+class ATank;
+
 /**
  * 
  */
